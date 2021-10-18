@@ -10,7 +10,7 @@ module.exports = {
         serif: ['Roboto', 'serif'],
       },
       backgroundImage: {
-        //'hero-header': "url('/src/img/Img.png')",
+        'hero-header': "url('/img/header-home.jpg')",
       },
     },
     display: ['group-hover'],

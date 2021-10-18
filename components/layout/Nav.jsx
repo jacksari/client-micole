@@ -2,6 +2,8 @@ import React from 'react';
 import image from '../../assets/logo.svg'
 import Image from 'next/image'
 import BtnPrimary from "./BtnPrimary";
+import BtnSecondary from "./BtnSecondary";
+import LinkNav from "./LinkNav";
 
 const Nav = () => {
     return (
@@ -16,14 +18,25 @@ const Nav = () => {
                     // placeholder="blur" // Optional blur-up while loading
                 />
                 <div className="">
-                    <a href="/" className="text-black2 font-bold mx-4">Home</a>
-                    <a href="/" className="text-black2 font-normal mx-4">Shop</a>
-                    <a href="/" className="text-black2 font-normal mx-4">Categories</a>
-                    <a href="/" className="text-black2 font-normal mx-4">Blog</a>
-                    <a href="/" className="text-black2 font-normal mx-4">Contact</a>
+                    <LinkNav
+                        href="/"
+                        text="Home"
+                    />
+                    <LinkNav
+                        href="/colegios"
+                        text="Colegios"
+                    />
+                    <LinkNav
+                        href="/blogs"
+                        text="Blog"
+                    />
+                    <LinkNav
+                        href="/contact"
+                        text="Contact"
+                    />
                 </div>
                 <div>
-                    <BtnPrimary
+                    <BtnSecondary
                         title="Crear cuenta"
                     />
                 </div>
