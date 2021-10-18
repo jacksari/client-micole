@@ -26,6 +26,9 @@ module.exports = {
         800: '#002759',
         900: '#00132d'
       },
+      primary_dark: {
+        500: '#0D263B'
+      },
       secondary: {
         100: '#e7f2f6',
         200: '#cfe6ed',
