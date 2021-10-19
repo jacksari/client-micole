@@ -8,6 +8,9 @@ body{
 .border-b-1 {
   border-bottom-width: 1px;
 }
+.bg-red{
+  background: red;
+}
 
 body::-webkit-scrollbar{
   width: 7px ;
