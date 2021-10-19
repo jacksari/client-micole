@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../../assets/logo.svg'
+import image from '../../assets/logo.png'
 import Image from 'next/image'
 import BtnPrimary from "./BtnPrimary";
 import BtnSecondary from "./BtnSecondary";
