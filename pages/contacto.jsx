@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from "../components/layout/Layout";
 
-function Contact(props) {
+function Contacto(props) {
     return (
         <Layout>
-            <h1>Contact</h1>
+            <h1>Contacto</h1>
         </Layout>
     );
 }
 
-export default Contact;
+export default Contacto;
