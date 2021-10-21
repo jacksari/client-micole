@@ -1,71 +1,138 @@
 import React from 'react';
 import Link from "next/link";
-import {FiSend} from "react-icons/fi";
+import {FiSend, FiMail, FiPhone, FiMapPin} from "react-icons/fi";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 
 function Footer(props) {
     return (
-        <footer className="flex flex-col absolute  w-full z-10 bg-primary_dark-500">
-            <div className="py-16 w-full mx-auto max-w-6xl sm:px-6 lg:px-8 flex items-start justify-between">
+        <footer className=" flex flex-col absolute  w-full z-10 bg-primary_dark-500">
+            <div className="py-16 w-full mx-auto max-w-7xl sm:px-6 lg:px-8 flex items-start justify-between">
+                <div className="flex flex-col w-2/5 pr-12">
+                    <h3 className="text-white text-lg font-bold mb-3">Contact us</h3>
+                    <p className="flex items-center mb-3">
+                        <FiMapPin color="#fff" size="1.8rem"/>
+                        <span className="ml-4 text-white text-sm font-light">329 Queensberry Street, North Melbourne VIC 3051, Australia.</span>
+                    </p>
+                    <p className="flex items-center mb-3">
+                        <FiPhone color="#fff" size="1.2rem"/>
+                        <span className="ml-4 text-white text-sm font-light">123 456 7890</span>
+                    </p>
+                    <p className="flex items-center mb-3">
+                        <FiMail color="#fff" size="1.2rem"/>
+                        <span className="ml-4 text-white text-sm font-light">support@houzing.com</span>
+                    </p>
+                    <div className="flex items-center mt-4">
+                        <a href="#" className="mr-6 hover:bg-white hover:bg-opacity-25 p-2 rounded transition">
+                            <FaFacebookF color="#fff" size="1.2rem"/>
+                        </a>
+                        <a href="#" className="mr-6 hover:bg-white hover:bg-opacity-25 p-2 rounded transition">
+                            <FaTwitter color="#fff" size="1.2rem"/>
+                        </a>
+                        <a href="#" className="mr-6 hover:bg-white hover:bg-opacity-25 p-2 rounded transition">
+                            <FaInstagram color="#fff" size="1.2rem"/>
+                        </a>
+                        <a href="#" className="mr-6 hover:bg-white hover:bg-opacity-25 p-2 rounded transition">
+                            <FaLinkedinIn color="#fff" size="1.2rem"/>
+                        </a>
+                    </div>
+                </div>
+                <div className="flex flex-col w-1/5">
+                    <h3 className="text-white text-lg font-medium mb-3">Descubre</h3>
+                    <Link href="/">
+                        <a className="text-white text-sm font-light my-2">
+                            Lima
+                        </a>
+                    </Link>
+                </div>
+                <div className="flex flex-col w-1/5">
+                    <h3 className="text-white text-lg font-medium mb-3">Categorías</h3>
+                    <Link href="/">
+                        <a className="text-white text-sm font-light my-2">
+                            Religiosos
+                        </a>
+                    </Link>
+                    <Link href="/">
+                        <a className="text-white text-sm font-light my-2">
+                            Internacionales
+                        </a>
+                    </Link>
+                    <Link href="/">
+                        <a className="text-white text-sm font-light my-2">
+                            Mujeres
+                        </a>
+                    </Link>
+                    <Link href="/">
+                        <a className="text-white text-sm font-light my-2">
+                            Hombres
+                        </a>
+                    </Link>
+                    <Link href="/">
+                        <a className="text-white text-sm font-light my-2 font-t2">
+                            Especiales
+                        </a>
+                    </Link>
+                </div>
+                <div className="flex flex-col w-1/5">
+                    <h3 className="text-white text-lg font-medium mb-3">Menú</h3>
+                    <Link href="/">
+                        <a className="text-white text-sm font-light my-2">
+                            Inicio
+                        </a>
+                    </Link>
+                    <Link href="/">
+                        <a className="text-white text-sm font-light my-2">
+                            Categorías
+                        </a>
+                    </Link>
+                    <Link href="/">
+                        <a className="text-white text-sm font-light my-2">
+                            Nosotros
+                        </a>
+                    </Link>
+                    <Link href="/">
+                        <a className="text-white text-sm font-light my-2">
+                            Blog
+                        </a>
+                    </Link>
+                    <Link href="/">
+                        <a className="text-white text-sm font-light my-2">
+                            Contáctanos
+                        </a>
+                    </Link>
+                    <Link href="/">
+                        <a className="text-white text-sm font-light my-2">
+                            Términos y condiciones
+                        </a>
+                    </Link>
+                </div>
                 <div className="flex flex-col w-2/5">
-                    <h3 className="text-white text-lg font-bold mb-3">Contact us</h3>
-                    <Link href="/">
-                        <a className="text-white text-sm font-light my-1">
-                            Home
-                        </a>
-                    </Link>
-                    <Link href="/">
-                        <a className="text-white text-sm font-light my-1">
-                            Home
-                        </a>
-                    </Link>
-                </div>
-                <div className="flex flex-col w-1/5">
-                    <h3 className="text-white text-lg font-bold mb-3">Contact us</h3>
-                    <Link href="/">
-                        <a className="text-white text-sm font-light my-1">
-                            Home
-                        </a>
-                    </Link>
-                    <Link href="/">
-                        <a className="text-white text-sm font-light my-1">
-                            Home
-                        </a>
-                    </Link>
-                </div>
-                <div className="flex flex-col w-1/5">
-                    <h3 className="text-white text-lg font-bold mb-3">Contact us</h3>
-                    <Link href="/">
-                        <a className="text-white text-sm font-light my-1">
-                            Home
-                        </a>
-                    </Link>
-                    <Link href="/">
-                        <a className="text-white text-sm font-light my-1">
-                            Home
-                        </a>
-                    </Link>
-                </div>
-                <div className="flex flex-col w-1/5">
-                    <h3 className="text-white text-lg font-bold mb-3">Contact us</h3>
-                    <Link href="/">
-                        <a className="text-white text-sm font-light my-1">
-                            Home
-                        </a>
-                    </Link>
-                    <Link href="/">
-                        <a className="text-white text-sm font-light my-1">
-                            Home
-                        </a>
-                    </Link>
-                </div>
-                <div className="flex flex-col w-2/5">
-                    <h3 className="text-white text-lg font-bold mb-3">Contact us</h3>
-                    <p className="text-white text-sm font-light my-1">We don’t send spam so don’t worry.</p>
+                    <h3 className="text-white text-lg font-medium mb-3">Suscríbete</h3>
+                    <p className="text-white text-sm font-light my-1">Entérate de todos los tips sobre educación para tus hijos que te
+                        ofrece MiCole.pe</p>
                     <div className="bg-white flex justify-between items-center p-1 rounded mt-3">
-                        <input type="text" className="w-full flex-1 outline-none pl-2"/>
+                        <input placeholder="Ingresa tu correo" type="text" className="w-full flex-1 outline-none pl-2"/>
                         <div className="bg-primary-500 p-1 rounded">
                             <FiSend size="1.5rem" color={'#fff'}/>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div className="border-t-1 border-footer ">
+                <div className="py-8 w-full mx-auto max-w-7xl sm:px-6 lg:px-8 flex items-start justify-between">
+                    <p className="text-white text-sm font-light">© { new Date().getFullYear()} Desarrollado por MiCole - Todos los derechos reservados.</p>
+                    <div>
+                        <Link href="/">
+                            <a className="text-white text-sm font-light my-2 mx-2">Inicio</a>
+                        </Link>
+                        <Link href="/">
+                            <a className="text-white text-sm font-light my-2 mx-2">Colegios</a>
+                        </Link>
+                        <Link href="/">
+                            <a className="text-white text-sm font-light my-2 mx-2">Contáctanos</a>
+                        </Link>
+                        <Link href="/">
+                            <a className="text-white text-sm font-light my-2 mx-2">Términos y condiciones</a>
+                        </Link>
                     </div>
                 </div>
             </div>
