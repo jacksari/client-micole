@@ -10,7 +10,7 @@ module.exports = {
         serif: ['Roboto', 'serif'],
       },
       backgroundImage: {
-        'hero-header': "url('/img/header-home.jpg')",
+        'hero-header': "url('/img/home-header.png')",
       },
     },
     display: ['group-hover'],
@@ -196,7 +196,7 @@ module.exports = {
         900: '#881337',
       },
       black: '#05172C',
-      black2: '#264653',
+      black2: '#0D263B',
       white: colors.white,
       transparent: 'transparent',
       current: 'currentColor',

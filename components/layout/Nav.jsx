@@ -1,35 +1,33 @@
 import React from 'react';
-import image from '../../assets/logo.png'
+import image from '../../assets/logo.svg'
 import Image from 'next/image'
-import BtnPrimary from "./BtnPrimary";
 import BtnSecondary from "./BtnSecondary";
 import LinkNav from "./LinkNav";
 import Link from 'next/link'
+import { FaRegUser } from "react-icons/fa";
 
 const Nav = () => {
     return (
-        <nav className="flex flex-col absolute  w-full z-10">
+        <nav className="flex flex-col absolute  w-full z-10 bg-primary-500 shadow-md">
             <div className="py-4 w-full mx-auto max-w-6xl sm:px-6 lg:px-8 flex items-center justify-between">
                 <Link href="/">
                     <a className="m-0 p-0">
-                        <Image
-                            src={image}
-                            alt="Picture of the author"
-                            width={120}
-                            height={50}
-                            // blurDataURL="data:..." automatically provided
-                            // placeholder="blur" // Optional blur-up while loading
-                        />
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src="/img/logo.svg" className="object-contain h-8" alt=""/>
                     </a>
                 </Link>
-                <div className="">
+                <div className="flex-1 flex justify-end">
                     <LinkNav
                         href="/"
                         text="Home"
                     />
                     <LinkNav
-                        href="/colegios"
-                        text="Colegios"
+                        href="/categorias"
+                        text="Categorías"
+                    />
+                    <LinkNav
+                        href="/nosotros"
+                        text="Nosotros"
                     />
                     <LinkNav
                         href="/blogs"
@@ -37,12 +35,15 @@ const Nav = () => {
                     />
                     <LinkNav
                         href="/contact"
-                        text="Contact"
+                        text="Contáctanos"
                     />
                 </div>
-                <div>
+                <div className="flex items-center">
+                    <div className="mx-2">
+                        <FaRegUser color="#fff" size="1.2rem"/>
+                    </div>
                     <BtnSecondary
-                        title="Crear cuenta"
+                        title="Inscribe tu colegio"
                     />
                 </div>
             </div>
