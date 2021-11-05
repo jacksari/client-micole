@@ -8,8 +8,8 @@ import { FaRegUser } from "react-icons/fa";
 
 const Nav = () => {
     return (
-        <nav className="flex flex-col absolute  w-full z-10 bg-primary-500 shadow-md">
-            <div className="py-4 w-full mx-auto max-w-6xl sm:px-6 lg:px-8 flex items-center justify-between">
+        <nav className="flex flex-col absolute  w-full z-10 bg-primary-500 shadow-md z-50">
+            <div className="py-4 w-full mx-auto max-w-7xl sm:px-6 lg:px-8 flex items-center justify-between">
                 <Link href="/">
                     <a className="m-0 p-0">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -22,13 +22,14 @@ const Nav = () => {
                         text="Home"
                     />
                     <LinkNav
+                        href="/colegios"
+                        text="Colegios"
+                    />
+                    <LinkNav
                         href="/categorias"
                         text="Categorías"
                     />
-                    <LinkNav
-                        href="/nosotros"
-                        text="Nosotros"
-                    />
+
                     <LinkNav
                         href="/blogs"
                         text="Blog"
