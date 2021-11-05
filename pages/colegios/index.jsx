@@ -15,9 +15,9 @@ function Index() {
             <NavFixed/>
 
             <div className="bg-white py-8 px-8">
-                <div className="w-full mx-auto max-w-full">
-                    <div className="grid grid-cols-5 gap-6">
-                        <div className="col-span-3">
+                <div className="w-full mx-auto max-w-full section-max">
+                    <div className="grid grid-cols-3 gap-6">
+                        <div className="col-span-2">
                             <div className="bg-white rounded flex justify-between">
                                 <div className="flex flex-col mr-3">
                                     <p className="font-bold text-base uppercase">Distrito</p>
@@ -271,11 +271,11 @@ function Index() {
                                     <p className="mx-1 bg-gray-200 font-medium h-8 w-8 flex items-center justify-center rounded-full text-gray-500">4</p>
 
                                 </div>
-                                <p className="mt-4 text-primary_dark-500">Mostrando 6 de 134 Colegios</p>
+                                <p className="mt-4 text-primary_dark-500 text-sm">Mostrando 6 de 134 Colegios</p>
 
                             </div>
                         </div>
-                        <div className="bg-gray-200 col-span-2">
+                        <div className="col-span-1 bg-gray-200 ">
                             <h2>MAPA</h2>
                         </div>
                     </div>
