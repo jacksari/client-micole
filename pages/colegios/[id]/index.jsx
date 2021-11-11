@@ -5,11 +5,8 @@ import NavFixed from "../../../components/layout/NavFixed";
 function Index() {
     return (
         <Layout>
-
-
-
             <NavFixed/>
-            <h1>Schoole details</h1>
+            <h1 className="w-full flex items-center justify-center">Schoole details</h1>
         </Layout>
     );
 }

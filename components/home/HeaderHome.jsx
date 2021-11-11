@@ -1,6 +1,5 @@
 import React from 'react';
 import BtnPrimary from '../layout/BtnPrimary';
-import BtnSecondary from '../layout/BtnSecondary';
 import { RiArrowDownSLine } from "react-icons/ri";
 
 
