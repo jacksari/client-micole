@@ -11,6 +11,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero-header': "url('/img/home-header.png')",
+        'hero-login': "linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url('/img/header-login.jpg')",
       },
     },
     display: ['group-hover'],
