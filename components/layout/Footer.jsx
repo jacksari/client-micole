@@ -5,9 +5,9 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/f
 
 function Footer(props) {
     return (
-        <footer className=" flex flex-col absolute  w-full z-10 bg-primary_dark-500">
-            <div className="py-16 w-full mx-auto max-w-7xl sm:px-6 lg:px-8 flex items-start justify-between">
-                <div className="flex flex-col w-2/5 pr-12">
+        <footer className=" flex flex-col absolute  w-full bg-primary_dark-500">
+            <div className="py-10 md:py-16 w-full mx-auto max-w-7xl sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-start md:justify-between">
+                <div className="flex flex-col w-full md:w-1/5 lg:w-2/5 pr-12 px-10 md:px-4 mb-6 md:mb-0">
                     <h3 className="text-white text-lg font-bold mb-3">Contact us</h3>
                     <p className="flex items-center mb-3">
                         <FiMapPin color="#fff" size="1.8rem"/>
@@ -36,7 +36,7 @@ function Footer(props) {
                         </a>
                     </div>
                 </div>
-                <div className="flex flex-col w-1/5">
+                <div className="flex flex-col w-full md:w-1/2 lg:w-1/5 px-10 md:px-4 mb-6 md:mb-0">
                     <h3 className="text-white text-lg font-medium mb-3">Descubre</h3>
                     <Link href="/">
                         <a className="text-white text-sm font-light my-2">
@@ -44,7 +44,7 @@ function Footer(props) {
                         </a>
                     </Link>
                 </div>
-                <div className="flex flex-col w-1/5">
+                <div className="flex flex-col w-full md:w-1/2 lg:w-1/5 px-10 md:px-4 mb-6 md:mb-0">
                     <h3 className="text-white text-lg font-medium mb-3">Categorías</h3>
                     <Link href="/">
                         <a className="text-white text-sm font-light my-2">
@@ -72,7 +72,7 @@ function Footer(props) {
                         </a>
                     </Link>
                 </div>
-                <div className="flex flex-col w-1/5">
+                <div className="flex flex-col w-full md:w-1/2 lg:w-1/5 px-10 md:px-4 mb-6 md:mb-0">
                     <h3 className="text-white text-lg font-medium mb-3">Menú</h3>
                     <Link href="/">
                         <a className="text-white text-sm font-light my-2">
@@ -105,7 +105,7 @@ function Footer(props) {
                         </a>
                     </Link>
                 </div>
-                <div className="flex flex-col w-2/5">
+                <div className="flex flex-col w-full md:w-1/2 lg:w-2/5 px-10 md:px-4">
                     <h3 className="text-white text-lg font-medium mb-3">Suscríbete</h3>
                     <p className="text-white text-sm font-light my-1">Entérate de todos los tips sobre educación para tus hijos que te
                         ofrece MiCole.pe</p>
@@ -118,20 +118,17 @@ function Footer(props) {
                 </div>
             </div>
             <div className="border-t-1 border-footer ">
-                <div className="py-8 w-full mx-auto max-w-7xl sm:px-6 lg:px-8 flex items-start justify-between">
-                    <p className="text-white text-sm font-light">© { new Date().getFullYear()} Desarrollado por MiCole - Todos los derechos reservados.</p>
-                    <div>
+                <div className="py-8 w-full mx-auto max-w-7xl sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-start md:justify-between">
+                    <p className="text-white text-xs md:text-sm font-light text-center px-2 md:px-0">© { new Date().getFullYear()} Desarrollado por MiCole - Todos los derechos reservados.</p>
+                    <div className="text-center">
                         <Link href="/">
-                            <a className="text-white text-sm font-light my-2 mx-2">Inicio</a>
+                            <a className="text-white text-xs md:text-sm font-light my-2 md:mx-2">Colegios</a>
                         </Link>
                         <Link href="/">
-                            <a className="text-white text-sm font-light my-2 mx-2">Colegios</a>
+                            <a className="text-white text-xs md:text-sm font-light my-2 md: mx-2">Contáctanos</a>
                         </Link>
                         <Link href="/">
-                            <a className="text-white text-sm font-light my-2 mx-2">Contáctanos</a>
-                        </Link>
-                        <Link href="/">
-                            <a className="text-white text-sm font-light my-2 mx-2">Términos y condiciones</a>
+                            <a className="text-white text-xs md:text-sm font-light my-2 md:mx-2">Términos y condiciones</a>
                         </Link>
                     </div>
                 </div>
