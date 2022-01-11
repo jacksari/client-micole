@@ -42,7 +42,7 @@ const Nav = () => {
                         text="Contáctanos"
                     />
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center mr-2 md:mr-0">
                     <div className="mx-2 hidden md:block">
                         <FaRegUser color="#fff" size="1.2rem"/>
                     </div>
