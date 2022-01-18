@@ -21,7 +21,7 @@ function NotFound() {
     return (
         <Layout>
             <Seo
-                title="Landing Page Colegios"
+                title="Inscripción Colegios"
             />
             <NavFixed/>
             <div className="h-screen bg-hero-landing1 bg-cover bg-center flex flex-col items-center justify-center">
@@ -32,7 +32,7 @@ function NotFound() {
                     <h2 className="text-lg lg:text-2xl font-bold text-white mb-12">Todo en un solo lugar, de forma simple y a bajo costo.</h2>
 
                     <button >
-                        
+
                     </button>
                     <Li
                         className="cursor-pointer inline-flex items-center justify-center px-4 lg:px-8 py-2 lg:py-3  bg-primary-500 border border-transparent rounded-md font-semibold text-sm lg:text-base text-white uppercase tracking-widest hover:bg-primary-600 active:bg-primary-600 focus:outline-none focus:border-primary-200 focus:ring focus:ring-primary-200 disabled:opacity-25 transition"
@@ -50,7 +50,7 @@ function NotFound() {
             </div>
 
             <div className="bg-gray-100 py-16">
-                
+
               <div className="w-full mx-auto max-w-5xl sm:px-6 lg:px-8">
                   <h2 className="text-center font-bold text-3xl mb-12 text-black2">¿Por qué escoger MiCole.pe?</h2>
                   <div className="grid  grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
@@ -98,7 +98,7 @@ function NotFound() {
             <Element name="enrolled" className="element">
                 <FormSchool/>
             </Element>
-           
+
         </Layout>
     );
 }

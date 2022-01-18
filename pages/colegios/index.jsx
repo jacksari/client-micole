@@ -8,10 +8,14 @@ import BtnPrimary from "../../components/layout/BtnPrimary";
 import {RiArrowDownSLine} from "react-icons/ri";
 import { FiUsers } from "react-icons/fi";
 import { BsSuitHeart, BsArrowsAngleExpand } from "react-icons/bs";
+import Seo from "../../components/layout/Seo";
 
 function Index() {
     return (
         <Layout>
+            <Seo
+                title="Colegios"
+            />
             <NavFixed/>
 
             <div className="bg-white py-8 px-8">

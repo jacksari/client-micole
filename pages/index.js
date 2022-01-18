@@ -8,11 +8,19 @@ import cole3 from '../public/img/cole3.svg'
 import Image from 'next/image'
 import image from "../assets/logo.png";
 import BtnSecondary from "../components/layout/BtnSecondary";
+import Seo from "../components/layout/Seo";
+import NavFixed from "../components/layout/NavFixed";
 
 export default function Home() {
   return (
       <Layout>
+          <Seo
+              title="Busca tu colegio ideal"
+          />
+          <NavFixed/>
           <HeaderHome/>
+
+
           <div className="bg-gray-100 py-16">
               <div className="w-full mx-auto max-w-5xl sm:px-6 lg:px-8">
                   <h2 className="text-center font-bold text-3xl mb-12 text-black2">¿Por qué escoger MiCole.pe?</h2>

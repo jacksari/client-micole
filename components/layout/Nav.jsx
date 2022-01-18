@@ -6,7 +6,10 @@ import LinkNav from "./LinkNav";
 import Link from 'next/link'
 import { FaRegUser } from "react-icons/fa";
 
+import * as Scroll from "react-scroll";
+
 const Nav = () => {
+    let Li      = Scroll.Link;
     return (
         <nav className="flex flex-col absolute  w-full bg-primary-500 shadow-md z-50">
             <div className="py-4 w-full mx-auto max-w-7xl sm:px-6 lg:px-8 flex items-center justify-between">
@@ -35,7 +38,7 @@ const Nav = () => {
                         text="Blog"
                     />
                     <LinkNav
-                        href="/contact"
+                        href="/contacto"
                         text="Contáctanos"
                     />
                 </div>
@@ -43,9 +46,18 @@ const Nav = () => {
                     <div className="mx-2 hidden md:block">
                         <FaRegUser color="#fff" size="1.2rem"/>
                     </div>
-                    <BtnSecondary
-                        title="Inscribe tu colegio"
-                    />
+                    <Li
+                        className="cursor-pointer ml-4 inline-flex items-center px-3 md:px-6 py-1 md:py-2 bg-white border border-white rounded font-semibold text-xs text-primary-500 shadow uppercase tracking-widest hover:bg-gray-100 active:bg-gray-100 focus:outline-none focus:border-primary-100 focus:ring focus:ring-primary-200 disabled:opacity-25 transition"
+                        activeClass="active"
+                        to="enrolled"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={1000}
+                        onSetActive={()=>{}}
+                    >
+                        Inscribe tu colegio
+                    </Li>
                 </div>
             </div>
         </nav>
