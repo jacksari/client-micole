@@ -24,9 +24,10 @@ function Footer(props) {
                         <span className="ml-4 text-white text-sm font-light">micole.inscripcion@gmail.com</span>
                     </p>
                     <div className="flex items-center mt-4">
-                        <a href="#" className="mr-6 hover:bg-white hover:bg-opacity-25 p-2 rounded transition">
+                        <a href="https://www.facebook.com/Micole.peru" className="mr-6 hover:bg-white hover:bg-opacity-25 p-2 rounded transition">
                             <FaFacebookF color="#fff" size="1.2rem"/>
                         </a>
+                        {/*
                         <a href="#" className="mr-6 hover:bg-white hover:bg-opacity-25 p-2 rounded transition">
                             <FaTwitter color="#fff" size="1.2rem"/>
                         </a>
@@ -36,6 +37,7 @@ function Footer(props) {
                         <a href="#" className="mr-6 hover:bg-white hover:bg-opacity-25 p-2 rounded transition">
                             <FaLinkedinIn color="#fff" size="1.2rem"/>
                         </a>
+                        */}
                     </div>
                 </div>
                 <div className="flex flex-col w-full md:w-1/2 lg:w-1/5 px-10 md:px-4 mb-6 md:mb-0">
