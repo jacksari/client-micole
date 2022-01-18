@@ -8,18 +8,20 @@ function Footer(props) {
         <footer className=" flex flex-col absolute  w-full bg-primary_dark-500">
             <div className="py-10 md:py-16 w-full mx-auto max-w-7xl sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-start md:justify-between">
                 <div className="flex flex-col w-full md:w-1/5 lg:w-2/5 pr-12 px-10 md:px-4 mb-6 md:mb-0">
-                    <h3 className="text-white text-lg font-bold mb-3">Contact us</h3>
+                    <h3 className="text-white text-lg font-bold mb-3">Contáctanos</h3>
+                    {/*
                     <p className="flex items-center mb-3">
                         <FiMapPin color="#fff" size="1.8rem"/>
                         <span className="ml-4 text-white text-sm font-light">329 Queensberry Street, North Melbourne VIC 3051, Australia.</span>
                     </p>
+                    */}
                     <p className="flex items-center mb-3">
                         <FiPhone color="#fff" size="1.2rem"/>
-                        <span className="ml-4 text-white text-sm font-light">123 456 7890</span>
+                        <span className="ml-4 text-white text-sm font-light">+51 981784174</span>
                     </p>
                     <p className="flex items-center mb-3">
                         <FiMail color="#fff" size="1.2rem"/>
-                        <span className="ml-4 text-white text-sm font-light">support@houzing.com</span>
+                        <span className="ml-4 text-white text-sm font-light">micole.inscripcion@gmail.com</span>
                     </p>
                     <div className="flex items-center mt-4">
                         <a href="#" className="mr-6 hover:bg-white hover:bg-opacity-25 p-2 rounded transition">
@@ -79,22 +81,22 @@ function Footer(props) {
                             Inicio
                         </a>
                     </Link>
-                    <Link href="/">
+                    <Link href="/categorias">
                         <a className="text-white text-sm font-light my-2">
                             Categorías
                         </a>
                     </Link>
-                    <Link href="/">
+                    <Link href="/nosotros">
                         <a className="text-white text-sm font-light my-2">
                             Nosotros
                         </a>
                     </Link>
-                    <Link href="/">
+                    <Link href="/blogs">
                         <a className="text-white text-sm font-light my-2">
                             Blog
                         </a>
                     </Link>
-                    <Link href="/">
+                    <Link href="/contacto">
                         <a className="text-white text-sm font-light my-2">
                             Contáctanos
                         </a>
