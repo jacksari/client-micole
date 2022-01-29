@@ -1,7 +1,4 @@
 import React from 'react';
-import image from '../../assets/logo.svg'
-import Image from 'next/image'
-import BtnSecondary from "./BtnSecondary";
 import LinkNav from "./LinkNav";
 import Link from 'next/link'
 import { FaRegUser } from "react-icons/fa";
