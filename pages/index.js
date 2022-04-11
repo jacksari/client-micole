@@ -12,6 +12,7 @@ import Seo from "../components/layout/Seo";
 import NavFixed from "../components/layout/NavFixed";
 
 export default function Home() {
+    console.log('env', process.env.NODE_ENV)
   return (
       <Layout>
           <Seo

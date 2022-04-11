@@ -1,6 +1,7 @@
 module.exports = {
     reactStrictMode: true,
     env: {
-        frontendUrl: 'https://micole.pe'
+        frontendUrl: 'https://micole.pe',
+        entorno: 'development'
     }
 }
