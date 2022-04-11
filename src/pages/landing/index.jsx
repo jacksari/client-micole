@@ -3,9 +3,9 @@ import BtnPrimary from '../../components/layout/BtnPrimary';
 import Layout from '../../components/layout/Layout';
 import NavFixed from '../../components/layout/NavFixed';
 
-import cole1 from '../../public/img/cole1.svg'
-import cole2 from '../../public/img/cole2.svg'
-import cole3 from '../../public/img/cole3.svg'
+import cole1 from '../../../public/img/cole1.svg'
+import cole2 from '../../../public/img/cole2.svg'
+import cole3 from '../../../public/img/cole3.svg'
 
 import Image from 'next/image'
 

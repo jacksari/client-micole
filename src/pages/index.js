@@ -1,18 +1,25 @@
 import Layout from "../components/layout/Layout";
 import HeaderHome from "../components/home/HeaderHome";
 import WhyMicole from "../components/home/WhyMicole";
-import React from "react";
-import cole1 from '../public/img/cole1.svg'
-import cole2 from '../public/img/cole2.svg'
-import cole3 from '../public/img/cole3.svg'
+import React, {useContext, useEffect} from "react";
+import cole1 from '../../public/img/cole1.svg'
+import cole2 from '../../public/img/cole2.svg'
+import cole3 from '../../public/img/cole3.svg'
 import Image from 'next/image'
 import image from "../assets/logo.png";
 import BtnSecondary from "../components/layout/BtnSecondary";
 import Seo from "../components/layout/Seo";
 import NavFixed from "../components/layout/NavFixed";
+import clienteAxios from "../config/axios";
+import authContext from "../context/auth/authContext";
 
 export default function Home() {
-    console.log('env', process.env.NODE_ENV)
+    console.log('api', process.env.apiUrl)
+    const { prueba } = useContext(authContext)
+    useEffect(() => {
+        prueba()
+    }, [])
+
   return (
       <Layout>
           <Seo
