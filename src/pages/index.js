@@ -14,7 +14,7 @@ import clienteAxios from "../config/axios";
 import authContext from "../context/auth/authContext";
 
 export default function Home() {
-    console.log('api', process.env.apiUrl)
+    console.log('api prueba jack', process.env.apiUrl)
     const { prueba } = useContext(authContext)
     useEffect(() => {
         prueba()
